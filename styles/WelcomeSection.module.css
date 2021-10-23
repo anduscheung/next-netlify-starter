@@ -1,0 +1,291 @@
+.container {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.menuButton {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  margin-right: 5vw;
+}
+.menuButton:hover {
+  opacity: 60%;
+}
+
+.bigName {
+  position: absolute;
+  z-index: 10;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  top: -6vw;
+  left: 5vw;
+  font-size: 12vw;
+  letter-spacing: 1.2vw;
+}
+
+.nameLetterHalf {
+  line-height: 1;
+  max-height: 12vw;
+  position: relative;
+  display: inline-block;
+  color: #d4d4d4;
+}
+.nameLetterHalf:before {
+  max-height: 12vw;
+  line-height: 1;
+  content: attr(attribute);
+  color: #565656;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  overflow: hidden;
+}
+
+.lastName {
+  position: absolute;
+  z-index: 10;
+  font-weight: normal;
+  color: #d4d4d4;
+  font-family: "Quicksand", sans-serif;
+  font-size: 92px;
+  letter-spacing: 9.2px;
+  left: 5vw;
+  top: 7vw;
+  font-size: 5vw;
+  letter-spacing: 0.5vw;
+}
+
+.subTitle {
+  position: absolute;
+  top: 110px;
+  z-index: 10;
+  color: #eeeeee;
+  font-size: 1.5vw;
+  letter-spacing: 0.15vw;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  text-align: right;
+  right: 5vw;
+}
+
+.btnGroup {
+  position: absolute;
+  color: #eeeeee;
+  font-size: 1vw;
+  z-index: 10;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  top: 21vw;
+  left: 5vw;
+}
+
+.btnBase {
+  opacity: 80%;
+  padding: 12px 42px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn1 {
+  background: #1c1c1c;
+}
+
+.btn2 {
+  background: #5b5b5b;
+  margin-left: 2vw;
+}
+
+.btnBase:hover {
+  opacity: 60%;
+}
+
+.gotoButtonContainer {
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  bottom: 120px;
+  right: 5vw;
+}
+.gotoButtonContainer:hover {
+  opacity: 60%;
+}
+
+.gotoButtonWords {
+  font-weight: bold;
+  font-size: 1vw;
+  color: #eeeeee;
+  font-family: "Quicksand", sans-serif;
+  margin-right: 15px;
+}
+
+/* 2xl */
+@media (max-width: 1535px) {
+  .bigName {
+    top: -6vw;
+    font-size: 12vw;
+    letter-spacing: 1.3vw;
+  }
+  .nameLetterHalf {
+    max-height: 12vw;
+  }
+  .nameLetterHalf:before {
+    max-height: 12vw;
+  }
+  .lastName {
+    font-size: 6vw;
+  }
+  .btnGroup {
+    font-size: 1.1vw;
+    top: 25vw;
+  }
+  .btn2 {
+    margin-left: 1.7vw;
+  }
+}
+/* xl */
+@media (max-width: 1279px) {
+  .bigName {
+    top: -6.5vw;
+    font-size: 13vw;
+    letter-spacing: 1.3vw;
+  }
+  .nameLetterHalf {
+    max-height: 13vw;
+  }
+  .nameLetterHalf:before {
+    max-height: 13vw;
+  }
+  .lastName {
+    top: 7vw;
+    font-size: 7vw;
+  }
+  .btnGroup {
+    font-size: 1.3vw;
+  }
+}
+/* lg */
+@media (max-width: 1023px) {
+  .bigName {
+    top: -7vw;
+    font-size: 14vw;
+    letter-spacing: 1.4vw;
+  }
+  .nameLetterHalf {
+    max-height: 14vw;
+  }
+  .nameLetterHalf:before {
+    max-height: 14vw;
+  }
+  .lastName {
+    font-size: 8vw;
+    top: 8vw;
+  }
+  .btnGroup {
+    font-size: 1.7vw;
+    top: 35vw;
+  }
+  .subTitle {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+  }
+  .gotoButtonWords {
+    font-size: 1.8vw;
+  }
+  .menuButton {
+    font-size: 20px;
+    margin-top: -50px;
+  }
+}
+/* md */
+@media (max-width: 767px) {
+  .bigName {
+    top: -11vw;
+    font-size: 22vw;
+    letter-spacing: 1.1vw;
+  }
+  .nameLetterHalf {
+    max-height: 22vw;
+  }
+  .nameLetterHalf:before {
+    max-height: 22vw;
+  }
+  .lastName {
+    top: 12vw;
+    font-size: 11vw;
+  }
+  .btnGroup {
+    font-size: 2vw;
+    top: 75vw;
+  }
+  .subTitle {
+    text-align: left;
+    top: 38vw;
+    font-size: 2.5vw;
+    left: 6vw;
+    letter-spacing: 0.3vw;
+  }
+  .gotoButtonWords {
+    font-size: 2vw;
+  }
+  .menuButton {
+    font-size: 20px;
+    margin-top: -50px;
+  }
+}
+/* sm */
+@media (max-width: 639px) {
+  .bigName {
+    top: -12.5vw;
+    font-size: 25vw;
+    letter-spacing: 0;
+  }
+  .nameLetterHalf {
+    max-height: 25vw;
+  }
+  .nameLetterHalf:before {
+    max-height: 25vw;
+  }
+  .subTitle {
+    top: 50vw;
+    font-size: 4vw;
+    letter-spacing: 0.4vw;
+  }
+  .lastName {
+    top: 14vw;
+    font-size: 13vw;
+  }
+  .btnGroup {
+    font-size: 4vw;
+    top: 95vw;
+  }
+  .btn2 {
+    margin-left: 4vw;
+  }
+  .btnBase {
+    opacity: 80%;
+    padding: 12px 42px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .gotoButtonWords {
+    font-size: 3.5vw;
+  }
+  .gotoButtonContainer {
+    display: none;
+  }
+  .menuButton {
+    display: none;
+  }
+}
